@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Project</a>
+    <a href="#contact">Contact</a>
+   </nav>
+   <button onclick="toggleTheme()">Switch Theme</button>
+
+   <main>
+    <section id="home">
+    <h1>Hi! I'm <span>John</span></h1>
+    <img src="images/my-picture.jpg.jpeg" alt="A picture of me" class="profile-pic">
+    <div class="hello-button" onclick="sayHello()">Say Hello</div>
+    <p class="intro">I'm a beginner web developer passionate about building websites and learning new technologies.
+</p>    
+<div class="message-box">
+    <p id="message">I'm a beginner web developer.</p>
+    <button id="updateButton" onclick="changeText()">Update Message</button>
+</div>
+<input type="text" id="visitorName" placeholder="Enter your name" oninput="greetVisitor()">
+<p id="greeting"></p>
+<a href="#projects" class="hero-button">View My Projects</a>
+</section>
+
+   </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p class="about-text">I'm a beginner web developer passionate about technology and creativity.
+        I'm currently learning HTML and CSS while working on different projects
+        to improve my skills.</p>
+
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Building the structure of websites</p>
+
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Styling and designing websites</p>
+
+            </div>
+
+            <div class="skill">
+                <h3>Responsive Design</h3>
+                <p>Making websites work well on different screen sizes</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-filters">
+    <button onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('html')">HTML</button>
+    <button onclick="filterProjects('css')">CSS</button>
+</div>
+        <div class="projects-container">
+
+             <div class="project-card" data-category="html">
+            <h3>My first website</h3>
+            <p>A website I built while learning HTML and web development</p>
+            <a href="Web class/assignment.html" class="project-button">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="css">
+            <h3>Life of a Koala</h3>
+            <p>My personal portfolio website built with HTML and CSS</p>
+            <a href="Web class/index.html" class="project-button">View Project</a>
+        </div>
+
+        <div class="project-card" data-category="html">
+            <h3>Architecture</h3>
+            <p>A new project I'll build as I continue learning web development</p>
+             <a href="Web class/work.html" class="project-button">View project</a>
+        </div>
+
+
+        </div>
+    
+
+    <section id="contact">
+        <h2>Contact me</h2>
+        <p>You can contact me through the form below</p>
+
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text"required ="name" name="name">
+
+            <label for="email">Email</label>
+            <input type="email" required ="email" name="email">
+
+        
+            <label for="message">Message</label>
+            <textarea name="message"required ="message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+
+        </form>
+
+    </section>
+   </main>
+     
+   <footer>
+    <p>&copy; 2026 John. All rights reserved</p>
+   </footer>
+
+   <script src="script.js"></script>
+   
+        
+
+</body>
+</html>
